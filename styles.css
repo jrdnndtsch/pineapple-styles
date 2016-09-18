@@ -182,11 +182,16 @@ nav.main, .cart--quick {
 
 nav.main {
   display: flex;
-  left: -30%; }
+  left: -30%;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem; }
   nav.main ul {
     margin: auto; }
     nav.main ul li {
       margin-bottom: 20px; }
+    nav.main ul li.emoji {
+      margin-top: 50px;
+      font-size: 4rem; }
 
 nav.main.active {
   left: 0; }
