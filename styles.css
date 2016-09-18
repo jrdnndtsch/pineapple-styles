@@ -177,7 +177,8 @@ nav.main, .cart--quick {
   top: 0;
   border: 1px solid black;
   padding: 40px;
-  transition: 0.3s all ease; }
+  transition: 0.3s all ease;
+  z-index: 20; }
 
 nav.main {
   display: flex;
@@ -353,10 +354,28 @@ main.product {
   padding-top: 80px; }
   main.product .flex-container {
     padding-bottom: 40px; }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+      main.product .flex-container {
+        flex-direction: column-reverse; } }
+    @media screen and (max-width: 599px) {
+      main.product .flex-container {
+        flex-direction: column-reverse; } }
     main.product .flex-container div {
       flex: 1 1 50%; }
+      @media screen and (min-width: 600px) and (max-width: 767px) {
+        main.product .flex-container div {
+          flex: 1 0 100%; } }
+      @media screen and (max-width: 599px) {
+        main.product .flex-container div {
+          flex: 1 0 100%; } }
   main.product .product--details {
     padding-right: 12%; }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+      main.product .product--details {
+        padding-right: 0; } }
+    @media screen and (max-width: 599px) {
+      main.product .product--details {
+        padding-right: 0; } }
     main.product .product--details p:last-of-type {
       margin-bottom: 40px; }
   main.product .product--navigation {

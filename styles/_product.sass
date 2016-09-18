@@ -3,10 +3,16 @@ main.product
 	:padding-top 80px
 	.flex-container 
 		:padding-bottom 40px
+		+display-for(sm xs)
+			:flex-direction column-reverse
 		div 
 			:flex 1 1 50%
+			+display-for(sm xs)
+				:flex 1 0 100%
 	.product--details
 		:padding-right 12%	
+		+display-for(sm xs)
+			:padding-right 0
 		p:last-of-type
 			:margin-bottom 40px	
 	.product--navigation
