@@ -5,6 +5,7 @@ header
 		:position relative
 		:margin 0
 		:transform translateY(50%)
+		:-webkit-transform translateY(50%)
 		:font-size 5rem
 		:letter-spacing 2px
 		:line-height 40px
@@ -49,6 +50,7 @@ nav.main, .cart--quick
 	:z-index 20	
 nav.main
 	:display flex
+	:display -webkit-flex
 	:left -30%
 	:font-family $titleFont
 	:font-size 1.8rem
@@ -73,8 +75,10 @@ nav.main.active
 	&:hover 
 		&:before
 			:transform translate3d(0, -1px, 0)
+			:-webkit-transform translate3d(0, -1px, 0)
 		&:after 
 			:transform translate3d(0, 1px, 0)
+			:-webkit-transform translate3d(0, 1px, 0)
 	&:before, &:after
 		:content ' '
 		:width 32px
@@ -124,6 +128,7 @@ nav.main.active
 		:margin-bottom 30px
 	.cart--product
 		:display flex
+		:display -webkit-flex
 		:align-items center
 		h3 
 			:margin 0
@@ -132,15 +137,19 @@ nav.main.active
 			:display inline-block	
 		&-image
 			:background red
-			:flex-basis 50px
+			:flex-basis 60px
+			:-webkit-flex-basis 60px
 			img 
 				:display block
 		&-details 
 			:flex 1 0 auto
+			:-webkit-flex 1 0 auto
 			:margin-left 12px
 			div:first-of-type
-				:display flex 
+				:display flex
+				:display -webkit-flex 
 				:justify-content space-between
+				:-webkit-justify-content space-between
 				:margin-bottom 8px
 			.cart--qty
 				:border 1px solid black	
@@ -170,7 +179,9 @@ nav.main.active
 			:margin-bottom 30px
 			:padding-top 10px
 			:display flex
+			:display -webkit-flex
 			:justify-content space-between
+			:-webkit-justify-content space-between
 
 
 
