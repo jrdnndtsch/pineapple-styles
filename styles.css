@@ -271,7 +271,35 @@ nav.main.active {
       margin-left: 12px; }
       .cart--quick .cart--product-details div:first-of-type {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-bottom: 8px; }
+      .cart--quick .cart--product-details .cart--qty {
+        border: 1px solid black;
+        display: inline-block; }
+        .cart--quick .cart--product-details .cart--qty button, .cart--quick .cart--product-details .cart--qty input {
+          border: none;
+          text-align: center;
+          width: 20px; }
+        .cart--quick .cart--product-details .cart--qty button {
+          background: white; }
+        .cart--quick .cart--product-details .cart--qty button:first-of-type {
+          border-right: 1px solid black; }
+        .cart--quick .cart--product-details .cart--qty button:last-of-type {
+          border-left: 1px solid black; }
+  .cart--quick .cart--total {
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px 40px 40px; }
+    .cart--quick .cart--total p {
+      border-top: 1px solid black;
+      margin-top: 0;
+      margin-bottom: 30px;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between; }
 
 footer {
   font-family: sans-serif;

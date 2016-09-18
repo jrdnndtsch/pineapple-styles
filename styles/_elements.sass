@@ -135,6 +135,39 @@ nav.main.active
 			div:first-of-type
 				:display flex 
 				:justify-content space-between
+				:margin-bottom 8px
+			.cart--qty
+				:border 1px solid black	
+				:display inline-block
+				button, input
+					:border none
+					:text-align center
+					:width 20px
+				button
+					:background white
+				// input
+				// 	:background $colorPrimary
+				button:first-of-type
+					:border-right 1px solid black
+				button:last-of-type
+					:border-left 1px solid black
+	.cart--total			
+		:background white
+		:position absolute
+		:bottom 0
+		:left 0
+		:width 100%
+		:padding 10px 40px 40px 40px
+		p 
+			:border-top 1px solid black
+			:margin-top 0
+			:margin-bottom 30px
+			:padding-top 10px
+			:display flex
+			:justify-content space-between
+
+
+
 
 footer 
 	:font-family $titleFont
